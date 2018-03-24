@@ -1,12 +1,16 @@
 # KeYmaera X as a Library Example Repository
 
-[KeYmaera X](http://keymaerax.org) is an [open-source hybrid systems theorem prover](https://github.com/LS-Lab/KeYmaeraX-release) implemented in Scala. You can use KeYmaera X as a Scala library in your project by using the [Scala Build Tool](https://www.scala-sbt.org/). Simply include the following line in your `build.sbt` file:
+[KeYmaera X](http://keymaerax.org) is an [open-source hybrid systems theorem prover](https://github.com/LS-Lab/KeYmaeraX-release) implemented in Scala. 
+This repository demonstrates how to use KeYmaera X as a Scala library.
+
+The easiest way to use KeYmaera X as a library is via the [Scala Build Tool](https://www.scala-sbt.org/).
+Simply include the following line in your `build.sbt` file:
 
     libraryDependencies += "edu.cmu.cs.ls" % "keymaerax" % "4.4.2" from "https://github.com/LS-Lab/KeYmaeraX-release/releases/download/4.4.2/keymaerax.jar"
 
 You may want to update `4.4.2` to the [latest released version](https://github.com/LS-Lab/KeYmaeraX-release/releases), and update the link following "`from`" in a corresponding way. Note that you can use `http://keymaerax.org/keymaerax.jar`, but that JAR file will always contain the latest release.
 
-Notice that you may need to initialize printers, parser, databases, tools, etc. See [Nathan's example project](https://github.com/nrfulton/kyxAsLibraryExample) for boilerplate code.
+You may need to initialize printers, parsers, databases, tools, etc. The `Example.scala` file contains an example of how to do this.
 
 # Common Errors
 
